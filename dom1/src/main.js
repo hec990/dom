@@ -80,8 +80,11 @@ console.log(k) // <div>4</div>
 
 // 获取哥哥
 let l = dom.previous(t)
-console.log(l) // <div>3</div>、
+console.log(l) // <div>3</div>
 
+// 遍历所有节点
+const divList = dom.find('#e') // 获取多个 div.red 元素
+dom.each(divList, (n) => console.log(n)) // 遍历 divList 里的所有元素
 
 // 用于获取排行老几
 let age = dom.index(elements)
